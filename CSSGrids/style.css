@@ -5,7 +5,8 @@ body {
 .container {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-rows: 1fr;
 }
 
 .zone {
@@ -37,6 +38,8 @@ body {
     background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
     background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+
+    grid-column: span 2;
 }
 
 /***********************************************************************
@@ -50,6 +53,8 @@ body {
     background: -o-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #C655BE 0%,#cf0404 100%); /* IE10+ */
     background: linear-gradient(top, #C655BE 0%,#cf0404 100%); /* W3C */
+
+    grid-row: span 2;
 }
 
 /***********************************************************************
