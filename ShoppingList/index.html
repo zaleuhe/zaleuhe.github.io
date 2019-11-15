@@ -4,19 +4,25 @@
 	<title>Javascript + DOM</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body id="gradient">
 	<h1>Shopping List</h1>
-	<p id="first">Get it done today</p>
 	<input id="userInput" type="text" placeholder="enter items">
 	<button id="addItem">Add to List</button>
+	<p class="note"> Click item to strike-out</p>
 	<ul>
-		<li class=bold red" random="23">First Item</li>
-		<li>Second</li>
-		<li>Third</li>
-		<li>Forth</li>
-		<li>Fifth</li>
-		<li>Six</li>
+		<!-- <li class=bold red" random="23">First Item</li>
+		<li>Second</li> -->
 	</ul>
+	<div class="colorPicker">
+		<h2>Current CSS Background</h2>
+		<input type="color" class="colorLeft" name="colorLeft" value="#ffa500">
+		<input type="color" class="colorRight" name="colorRight" value="#77FF00">
+		<div class="slidecontainer">
+  		<input type="range" min="0" max="100" value="50" class="slider" id="colorRange">
+		</div>
+		<h3></h3>
+	</div>
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="gradiant-background.js"></script>
 </body>
 </html>
