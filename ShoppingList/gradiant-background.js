@@ -3,7 +3,7 @@ var css = document.querySelector("h3");
 var colorLeft = document.querySelector('.colorLeft');
 var colorRight = document.querySelector('.colorRight');
 var bodyColor = document.getElementById("gradient");
-var percentage = 50;
+var percentage = 33;
 
 colorLeft.addEventListener("input", setGradient);
 colorRight.addEventListener("input", setGradient);
